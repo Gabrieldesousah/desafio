@@ -1,9 +1,8 @@
-	  <section id="intro" class="text-intro no-padding-bottom backgroundImageCVR">
-	  	<div class="background-image"></div>
+	  <section id="intro" class="text-intro no-padding-bottom">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1>This could be your perfect</h1>
+              <h1>This could be your perfect <span class="rotate">startup intro site, landing page, bootstrap template</span> </h1>
               <h3 class="weight-300">It is SEO friendly, responsive and free.</h3>
             </div>
           </div>

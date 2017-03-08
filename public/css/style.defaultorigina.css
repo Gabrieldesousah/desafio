@@ -1,3 +1,4 @@
+style.defaultorigina.css
 /* 
 ========================================= 
 ========================================= 
@@ -303,34 +304,6 @@ INTRO
 =====================
 
 */
-#intro h1 {
-  color: #FFFFFF;
-}
-#intro .backgroundImageCVR{
-  position:relative;
-  padding:80px;
-}
-#intro .background-image{
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-  background:url('../img/bg-seringueira.jpg');
-  background-position: 40% 80%;
-  z-index:1;
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px) grayscale(10%); 
-}
-#intro .container{
-  position:relative;
-  z-index:2;
-  color:#fff;
-}
-
 .text-intro {
   text-align: center;
   color: #FFFFFF;
@@ -859,6 +832,7 @@ NAVBAR
 @media (min-width: 760PX) {
   .navbar ul.nav > li > a {
     border-top: solid 5px transparent;
+    padding-top: 23px;
   }
   .navbar ul.nav > li > a:hover {
     border-top-color: #FAAF40;
@@ -1228,18 +1202,6 @@ STYLE SWITCHER FOR DEMO
 .navbar-default {
   background-color: #FFFFFF;
   border-bottom-color: transparent;
-  height: 100px;
-}
-.navbar ul.nav > li > a {
-  padding-top: 33px;
-}
-
-.navbar .navbar-btn{
-  margin-top: 30px;
-}
-.navbar-brand>img {
-  height: 80px;
-  margin-top: -3px;
 }
 .navbar-default .navbar-brand {
   color: #FAAF40;
