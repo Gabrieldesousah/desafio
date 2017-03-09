@@ -303,32 +303,26 @@ INTRO
 =====================
 
 */
-#intro h1 {
-  color: #FFFFFF;
+
+@media (max-width: 800px) {
+  #parallaxBar{
+      height:470px;
+      background: url('http://www.jornalatribuna.com.br/wp-content/uploads/2016/06/seringueira.jpg') fixed;
+  }
 }
-#intro .backgroundImageCVR{
-  position:relative;
-  padding:80px;
+
+@media (min-width: 800px) {
+  #parallaxBar{
+    background: url('http://pre.univesp.br/sites/530bb90f9caf4daaa9000029/content_entry5310e5519caf4d500900002a/568d27e69caf4d43c20008c9/files/seringueira_topo.jpg') fixed;
+    height: 600px;
+  }
 }
-#intro .background-image{
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-  background:url('../img/bg-seringueira.jpg');
-  background-position: 40% 80%;
-  z-index:1;
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px) grayscale(10%); 
-}
-#intro .container{
-  position:relative;
-  z-index:2;
-  color:#fff;
+#parallaxBar{
+    background-color:#fff;
+    background-position: center;
+    position: relative; 
+    background-repeat: no-repeat;
+    filter: opacity(80%);
 }
 
 .text-intro {
@@ -356,7 +350,6 @@ INTRO
     background-image: -webkit-linear-gradient(left, color-stop(#FAAF40 0%), color-stop(#46426f 60%));
     background-image: linear-gradient(to right, #FAAF40 0%, #46426f 60%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff7473', endColorstr='#ff46426f', GradientType=1);
   }
 }
 @media (max-width: 1199px) {
@@ -439,7 +432,7 @@ SIGN UP FORM
     margin-bottom: 20px;
   }
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .sign-up-form .form-control {
     width: 350px;
   }
@@ -856,7 +849,7 @@ NAVBAR
   font-weight: 700;
   box-shadow: 0 1px 5px #666;
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .navbar ul.nav > li > a {
     border-top: solid 5px transparent;
   }
@@ -1046,7 +1039,7 @@ STYLE SWITCHER FOR DEMO
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 2px 2px 0 0;
@@ -1065,7 +1058,7 @@ STYLE SWITCHER FOR DEMO
   border-top: none;
   border-bottom: none;
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .navbar {
     border-radius: 0;
   }
@@ -1079,12 +1072,12 @@ STYLE SWITCHER FOR DEMO
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 760PX) and (max-width: 991px) {
+@media (min-width: 900PX) and (max-width: 991px) {
   .navbar-collapse {
     font-size: 14px;
   }
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -1116,7 +1109,7 @@ STYLE SWITCHER FOR DEMO
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -1686,7 +1679,7 @@ label {
   border-color: #dddddd;
 }
 /* responsive utilities */
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .text-center-xs {
     text-align: center !important;
   }
@@ -1696,7 +1689,7 @@ label {
     margin-right: auto;
   }
 }
-@media (min-width: 760PX) and (max-width: 991px) {
+@media (min-width: 900PX) and (max-width: 991px) {
   .text-center-sm {
     text-align: center !important;
   }
@@ -1768,7 +1761,7 @@ p {
   margin-bottom: 24px;
   font-size: 18px;
 }
-@media (min-width: 760PX) {
+@media (min-width: 900PX) {
   .lead {
     font-size: 24px;
   }
